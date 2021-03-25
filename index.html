@@ -12,199 +12,193 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <!-- NAVIGATION BAR -->
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <img class="logo" src="./assets/logo.png" alt="Logo">
+      </div>
+      <div class="nav-menu">
+        <a class="nav-link" href="#about"><span class="number">01.</span> About</a>
+        <a class="nav-link" href="#skills"><span class="number">02.</span> Skills</a>
+        <a class="nav-link" href="#projects"><span class="number">03.</span> Projects</a>
+        <a class="nav-link" href="#contact"><span class="number">04.</span> Contact</a>
+        <button class="main-btn">Resume</button>
+      </div>
+    </nav>
 
-      <!-- NAVIGATION BAR -->
-      <nav class="nav-bar">
-        <div class="nav-logo">
-          <img class="logo" src="./assets/logo.png" alt="Logo">
+    <main class="content">
+
+      <!-- HEADER -->
+      <header class="header-container">
+        <p class="my-name">Hi, my name is</p>
+        <h1 class="title">Pau Garcia.</h1>
+        <h3 class="subtitle">I build things for the web.</h3>
+        <p class="description">I'm a front-end developer based in Barcelona, passionate about building and designing websites and applications.</p>
+        <button class="main-btn header-btn">Get In Touch</button>
+      </header>
+
+      <!-- ABOUT -->
+      <section id="about" class="about-container">
+        <h3 class="section-title"><span class="section-number">01.</span> About Me</h3>
+        <div class="about-grid">
+          <div>
+            <p class="about-text">Hello! I'm Pau, a front-end developer based in Barcelona.</p>
+            <p class="about-text">I enjoy creating things that live on the internet, wheter that be websites, applications, or anything in between, My goal is to always build dynamic experiences, with a great UI and UX.</p>
+            <p class="about-text">I turned my communications background into a... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque placeat doloribus temporibus ipsa quibusdam sequi minima modi in veritatis fugit. </p>
+          </div>
+          <img class="profile" src="./assets/profile.jpeg" alt="Picture of myself">
         </div>
-        <div class="nav-menu">
-          <a class="nav-link" href="#about"><span class="number">01.</span> About</a>
-          <a class="nav-link" href="#skills"><span class="number">02.</span> Skills</a>
-          <a class="nav-link" href="#projects"><span class="number">03.</span> Projects</a>
-          <a class="nav-link" href="#contact"><span class="number">04.</span> Contact</a>
-          <button class="main-btn">Resume</button>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="skills-container">
+        <div>
+          <h3 class="section-title"><span class="section-number">02.</span> Skills</h3>
+          <div class="skills-grid">
+            <div>
+              <h4 class="grid-title"><i class="fas fa-code"></i>DEVELOPMENT</h4>
+              <div class="dev-grid">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript</p>
+                <p>TypeScript</p>
+                <p>Vue</p>
+                <p>Node.js</p>
+                <p>MySQL</p>
+                <p>AJAX</p>
+                <p>Sass</p>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="grid-title"><i class="fas fa-tools"></i>TOOLS</h4>
+              <ul class="skills-list">
+                <li><i class="fas fa-check"></i>Git + Github</li>
+                <li><i class="fas fa-check"></i>Command Line</li>
+                <li><i class="fas fa-check"></i>Chrome Dev Tools</li>
+              </ul>
+              <br>
+              <br>
+              <h4 class="grid-title"><i class="far fa-lightbulb"></i>KNOWLEDGE</h4>
+              <ul class="skills-list">
+                <li><i class="fas fa-check"></i>ECMAScript6</li>
+                <li><i class="fas fa-check"></i>TDD</li>
+                <li><i class="fas fa-check"></i>Usability</li>
+                <li><i class="fas fa-check"></i>Design</li>
+                <li><i class="fas fa-check"></i>Hardware</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </nav>
+      </section>
 
-      <main class="content">
-
-        <!-- HEADER -->
-        <header class="header-container">
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h3 class="section-title"><span class="section-number">03.</span> Projects</h3>
+        <article>
+          <p>Featured Project</p>
+          <h4>Project Name</h4>
+          <p>Project description</p>
+          <p>Project languages</p>
           <div>
-            <p class="my-name">Hi, my name is</p>
-            <h1 class="title">Pau Garcia.</h1>
-            <h3 class="subtitle">I build things for the web.</h3>
-            <p class="description">I'm a front-end developer based in Barcelona, passionate about building and designing websites and applications.</p>
-            <button class="main-btn header-btn">Get In Touch</button>
+            <a href=""></a>
+            <a href=""></a>
           </div>
-        </header>
+        </article>
 
-        <!-- ABOUT -->
-        <section id="about" class="about-container">
+        <article>
+          <p>Featured Project</p>
+          <h4>Project Name</h4>
+          <p>Project description</p>
+          <p>Project languages</p>
           <div>
-            <h3 class="section-title"><span class="section-number">01.</span> About Me</h3>
-            <div class="about-grid">
-              <div>
-                <p class="about-text">Hello! I'm Pau, a front-end developer based in Barcelona.</p>
-                <p class="about-text">I enjoy creating things that live on the internet, wheter that be websites, applications, or anything in between, My goal is to always build dynamic experiences, with a great UI and UX.</p>
-                <p class="about-text">I turned my communications background into a... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque placeat doloribus temporibus ipsa quibusdam sequi minima modi in veritatis fugit. </p>
-              </div>
-              <img class="profile" src="./assets/profile.jpeg" alt="Picture of myself">
-            </div>
-         </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section id="skills" class="skills-container">
-          <div>
-            <h3 class="section-title"><span class="section-number">02.</span> Skills</h3>
-            <div class="skills-grid">
-              <div>
-                <h4 class="grid-title"><i class="fas fa-code"></i>DEVELOPMENT</h4>
-                <div class="dev-grid">
-                  <p>HTML5</p>
-                  <p>CSS3</p>
-                  <p>JavaScript</p>
-                  <p>TypeScript</p>
-                  <p>Vue</p>
-                  <p>Node.js</p>
-                  <p>MySQL</p>
-                  <p>AJAX</p>
-                  <p>Sass</p>
-                </div>
-              </div>
-
-              <div>
-                <h4 class="grid-title"><i class="fas fa-tools"></i>TOOLS</h4>
-                <ul class="skills-list">
-                  <li><i class="fas fa-check"></i>Git + Github</li>
-                  <li><i class="fas fa-check"></i>Command Line</li>
-                  <li><i class="fas fa-check"></i>Chrome Dev Tools</li>
-                </ul>
-                <br>
-                <br>
-                <h4 class="grid-title"><i class="far fa-lightbulb"></i>KNOWLEDGE</h4>
-                <ul class="skills-list">
-                  <li><i class="fas fa-check"></i>ECMAScript6</li>
-                  <li><i class="fas fa-check"></i>TDD</li>
-                  <li><i class="fas fa-check"></i>Usability</li>
-                  <li><i class="fas fa-check"></i>Design</li>
-                  <li><i class="fas fa-check"></i>Hardware</li>
-                </ul>
-              </div>
-            </div>
+            <a href=""></a>
+            <a href=""></a>
           </div>
-        </section>
+        </article>
 
-        <!-- PROJECTS -->
-        <section id="projects">
-          <h3 class="section-title"><span class="section-number">03.</span> Projects</h3>
-          <article>
-            <p>Featured Project</p>
-            <h4>Project Name</h4>
-            <p>Project description</p>
+        <article>
+          <p>Featured Project</p>
+          <h4>Project Name</h4>
+          <p>Project description</p>
+          <p>Project languages</p>
+          <div>
+            <a href=""></a>
+            <a href=""></a>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h3>Other Projects</h3>
+        <div>
+          <div>
+            <i></i>
+            <h5>Project Name</h5>
+            <p>Project Description</p>
             <p>Project languages</p>
-            <div>
-              <a href=""></a>
-              <a href=""></a>
-            </div>
-          </article>
+          </div>
+        </div>
 
-          <article>
-            <p>Featured Project</p>
-            <h4>Project Name</h4>
-            <p>Project description</p>
+        <div>
+          <div>
+            <i></i>
+            <h5>Project Name</h5>
+            <p>Project Description</p>
             <p>Project languages</p>
-            <div>
-              <a href=""></a>
-              <a href=""></a>
-            </div>
-          </article>
+          </div>
+        </div>
 
-          <article>
-            <p>Featured Project</p>
-            <h4>Project Name</h4>
-            <p>Project description</p>
+        <div>
+          <div>
+            <i></i>
+            <h5>Project Name</h5>
+            <p>Project Description</p>
             <p>Project languages</p>
-            <div>
-              <a href=""></a>
-              <a href=""></a>
-            </div>
-          </article>
-        </section>
-
-        <section>
-          <h3>Other Projects</h3>
-          <div>
-            <div>
-              <i></i>
-              <h5>Project Name</h5>
-              <p>Project Description</p>
-              <p>Project languages</p>
-            </div>
           </div>
+        </div>
 
+        <div>
           <div>
-            <div>
-              <i></i>
-              <h5>Project Name</h5>
-              <p>Project Description</p>
-              <p>Project languages</p>
-            </div>
+            <i></i>
+            <h5>Project Name</h5>
+            <p>Project Description</p>
+            <p>Project languages</p>
           </div>
+        </div>
 
+        <div>
           <div>
-            <div>
-              <i></i>
-              <h5>Project Name</h5>
-              <p>Project Description</p>
-              <p>Project languages</p>
-            </div>
+            <i></i>
+            <h5>Project Name</h5>
+            <p>Project Description</p>
+            <p>Project languages</p>
           </div>
+        </div>
 
+        <div>
           <div>
-            <div>
-              <i></i>
-              <h5>Project Name</h5>
-              <p>Project Description</p>
-              <p>Project languages</p>
-            </div>
+            <i></i>
+            <h5>Project Name</h5>
+            <p>Project Description</p>
+            <p>Project languages</p>
           </div>
+        </div>
+      </section>
 
-          <div>
-            <div>
-              <i></i>
-              <h5>Project Name</h5>
-              <p>Project Description</p>
-              <p>Project languages</p>
-            </div>
-          </div>
+      <!-- CONTACT -->
+      <section id="contact">
+        <h3><span>04.</span> What's Next?</h3>
+        <h4>Get In Touch</h4>
+        <p>I am currently looking for any new opportunities, my inbox is open. Wheter you have a question or just want to say hi, I'll try my best to get back to you!</p>
+        <button>Say Hello</button>
+      </section>
 
-          <div>
-            <div>
-              <i></i>
-              <h5>Project Name</h5>
-              <p>Project Description</p>
-              <p>Project languages</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact">
-          <h3><span>04.</span> What's Next?</h3>
-          <h4>Get In Touch</h4>
-          <p>I am currently looking for any new opportunities, my inbox is open. Wheter you have a question or just want to say hi, I'll try my best to get back to you!</p>
-          <button>Say Hello</button>
-        </section>
-
-        <footer>
-          <p>Built by Pau Garcia</p>
-        </footer>
-      </main>
-    </div>
+      <footer>
+        <p>Built by Pau Garcia</p>
+      </footer>
+    </main>
+    
   </body>
 
 </html>
