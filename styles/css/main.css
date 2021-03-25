@@ -12,6 +12,8 @@ body {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   padding: 0 6rem;
   margin: 0 auto;
 }
@@ -93,7 +95,7 @@ body {
   font-size: 1.1rem;
   color: #8892b0;
   padding: 1rem 0;
-  max-width: 40%;
+  max-width: 60%;
   line-height: 1.5;
 }
 
@@ -108,6 +110,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8rem;
 }
 
 .section-title {
@@ -123,11 +126,22 @@ body {
   text-align: left;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 2rem;
+}
+
 .about-text {
   font-size: 1.1rem;
   color: #8892b0;
   text-align: left;
   line-height: 1.5;
+}
+
+.profile {
+  max-width: 300px;
+  border-radius: 0.3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
