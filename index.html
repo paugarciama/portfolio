@@ -12,16 +12,17 @@
 
   <body>
     <div class="wrapper">
-      
+
+      <!-- NAVIGATION BAR -->
       <nav class="nav-bar">
         <div class="nav-logo">
           <img src="" alt="">
         </div>
         <div class="nav-menu">
-          <a class="nav-link" href="#"><span class="number">01.</span> About</a>
-          <a class="nav-link" href="#"><span class="number">02.</span> Skills</a>
-          <a class="nav-link" href="#"><span class="number">03.</span> Projects</a>
-          <a class="nav-link" href="#"><span class="number">04.</span> Contact</a>
+          <a class="nav-link" href="#about"><span class="number">01.</span> About</a>
+          <a class="nav-link" href="#skills"><span class="number">02.</span> Skills</a>
+          <a class="nav-link" href="#projects"><span class="number">03.</span> Projects</a>
+          <a class="nav-link" href="#contact"><span class="number">04.</span> Contact</a>
           <button class="main-btn">Resume</button>
         </div>
       </nav>
@@ -55,10 +56,12 @@
         </section>
 
         <!-- SKILLS -->
-        <section id="skills">
-          <h3 class="section-title"><span class="section-number">02.</span> Skills</h3>
+        <section id="skills" class="skills-container">
+          <div>
+            <h3 class="section-title"><span class="section-number">02.</span> Skills</h3>
             <div class="skills-grid">
-              <h4>DEVELOPMENT</h4>
+              <div>
+                <h4 class="grid-title">DEVELOPMENT</h4>
                 <div class="dev-grid">
                   <p>HTML5</p>
                   <p>CSS3</p>
@@ -69,22 +72,28 @@
                   <p>MySQL</p>
                   <p>AJAX</p>
                   <p>Sass</p>
-                  <p>Bootstrap</p>
                 </div>
-              <h4>TOOLS</h4>
-                <ul>
-                  <li>Git + Github</li>
+              </div>
+
+              <div>
+                <h4 class="grid-title">TOOLS</h4>
+                <ul class="skills-list">
+                  <i class="fas fa-check"></i><li>Git + Github</li>
                   <li>Command Line</li>
                   <li>Chrome Dev Tools</li>
                 </ul>
-              <h4>KNOWLEDGE</h4>
-                <ul>
+                <br>
+                <br>
+                <h4 class="grid-title">KNOWLEDGE</h4>
+                <ul class="skills-list">
                   <li>ECMAScript6</li>
                   <li>TDD</li>
                   <li>Usability</li>
                   <li>Design</li>
                 </ul>
+              </div>
             </div>
+          </div>
         </section>
 
         <!-- PROJECTS -->
