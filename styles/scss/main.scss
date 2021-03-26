@@ -44,10 +44,12 @@ body {
   color: #ccd6f6;
   text-decoration: none;
   margin: 0rem 1.5rem;
+  transition: 0.3s ease;
 }
 
 .nav-link:hover {
   color: #64ffda;
+  transition: 0.3s ease;
 }
 
 .number {
@@ -63,11 +65,13 @@ body {
   border: 1px solid #64ffda;
   border-radius: 0.2rem;
   padding: 0.6rem 0.9rem;
+  transition: 0.3s ease;
 }
 
 .main-btn:hover {
   cursor: pointer;
   background-color: #64ffdb11;
+  transition: 0.3s ease;
 }
 
 // HEADER
@@ -186,12 +190,15 @@ body {
   border: 1px solid #8892b0;
   border-radius: 50%;
   padding: 2.7rem 1rem;
+  transition: 0.2s ease;
 }
 
 .dev-grid p:hover {
   color: #64ffda;
   border: 1px solid #64ffda;
   transform: scale(1.15);
+  transition: 0.2s ease;
+  cursor: crosshair;
 }
 
 .skills-list {
@@ -276,6 +283,18 @@ body {
   padding: 2rem;
   background-color: #112240;
   border-radius: 0.3rem;
+  transition: 0.2s ease;
+}
+
+.other-card:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 10px #081829;
+  transition: 0.2s ease;
+  .other-title {
+    color: #64ffda;
+    transition: 0.2s ease;
+  }
 }
 
 .other-title {
@@ -283,6 +302,7 @@ body {
   color: #ccd6f6;
   margin-top: 0.5rem;
   margin-bottom: 0;
+  transition: 0.2s ease;
 }
 
 .other-description {
