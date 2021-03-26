@@ -145,6 +145,21 @@ body {
 .profile {
   max-width: 300px;
   border-radius: 0.3rem;
+  position: relative;
+  z-index: 10;
+}
+
+.profile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  opacity: 0.6;
+  /* !!! */
+  z-index: 1;
 }
 
 .skills-container {
@@ -192,7 +207,7 @@ body {
   border: 1px solid #64ffda;
   transform: scale(1.15);
   transition: 0.2s ease;
-  cursor: crosshair;
+  cursor: alias;
 }
 
 .skills-list {
