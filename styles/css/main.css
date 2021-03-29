@@ -272,6 +272,37 @@ body {
   padding-bottom: 8rem;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 5rem;
+}
+
+.project-img {
+  grid-column: 1/6;
+  height: 100%;
+  position: relative;
+}
+
+.project-overlay {
+  background-color: #64ffda;
+  width: 600px;
+  height: 100%;
+  position: absolute;
+}
+
+.project-screenshot {
+  max-width: 500px;
+}
+
+.project-info {
+  grid-column: 7/13;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1;
+}
+
 .project-type {
   font-family: monospace;
   font-size: 1rem;
@@ -282,22 +313,36 @@ body {
   font-size: 1.5rem;
   color: #ccd6f6;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project-description {
   color: #8892b0;
   background-color: #112240;
   line-height: 1.5;
-  padding: 1.2rem;
+  padding: 2rem 1.5rem;
   border-radius: 0.3rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: right;
 }
 
 .project-skills {
   font-family: monospace;
   font-size: 1rem;
   color: #8892b0;
+  margin-bottom: 1.8rem;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-links .fa-external-link-alt,
+.fa-github {
+  font-size: 1.3rem;
+  color: #ccd6f6;
 }
 
 .other-projects-container {
