@@ -146,20 +146,21 @@ body {
   max-width: 300px;
   border-radius: 0.3rem;
   position: relative;
-  z-index: 10;
 }
 
-.profile::before {
+.profile img {
+  max-width: 300px;
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+.profile::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: red;
+  background: #64ffda;
   opacity: 0.6;
-  /* !!! */
-  z-index: 1;
 }
 
 .skills-container {
