@@ -142,25 +142,54 @@ body {
   line-height: 1.5;
 }
 
+.profile-container {
+  max-width: 300px;
+  height: 100%;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 260px;
+  width: 100%;
+  opacity: 0.4;
+  transition: 0.3s ease;
+  background-color: #64ffda;
+  z-index: 2;
+  border-radius: 0.3rem;
+}
+
+.profile-container:hover .overlay {
+  opacity: 0;
+}
+
+.profile-container:hover .post-profile {
+  transform: translateX(15px) translateY(10px);
+}
+
 .profile {
   max-width: 300px;
   border-radius: 0.3rem;
   position: relative;
+  z-index: 1;
 }
 
-.profile img {
+.post-profile {
   max-width: 300px;
+  height: 260px;
+  border: 3px solid #64ffda;
   border-radius: 0.3rem;
-  position: relative;
-}
-
-.profile::after {
-  content: "";
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
-  background: #64ffda;
-  opacity: 0.6;
+  right: 0;
+  transform: translateX(20px) translateY(15px);
+  transition: 0.3s ease;
 }
 
 .skills-container {
