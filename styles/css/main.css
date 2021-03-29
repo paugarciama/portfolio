@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .html,
 body {
   margin: 0;
@@ -284,6 +285,12 @@ body {
   position: relative;
 }
 
+.project-img-reverse {
+  grid-column: 6/13¡;
+  height: 100%;
+  position: relative;
+}
+
 .project-overlay {
   background-color: #64ffda;
   width: 600px;
@@ -303,6 +310,14 @@ body {
   z-index: 1;
 }
 
+.project-info-reverse {
+  grid-column: 1/7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+}
+
 .project-type {
   font-family: monospace;
   font-size: 1rem;
@@ -316,6 +331,11 @@ body {
   margin-bottom: 1rem;
 }
 
+.project-title:hover {
+  color: #64ffda;
+  cursor: pointer;
+}
+
 .project-description {
   color: #8892b0;
   background-color: #112240;
@@ -324,6 +344,16 @@ body {
   border-radius: 0.3rem;
   margin-bottom: 1rem;
   text-align: right;
+}
+
+.project-description-reverse {
+  color: #8892b0;
+  background-color: #112240;
+  line-height: 1.5;
+  padding: 2rem 1.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .project-skills {
@@ -343,6 +373,11 @@ body {
 .fa-github {
   font-size: 1.3rem;
   color: #ccd6f6;
+}
+
+.fa-github:hover,
+.project-links .fa-external-link-alt:hover {
+  color: #64ffda;
 }
 
 .other-projects-container {
