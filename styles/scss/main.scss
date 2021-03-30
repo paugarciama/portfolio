@@ -329,7 +329,7 @@ a {
   position: relative;
 }
 
-.p-link::before {
+/* .p-link::before {
   content: "";
   position: absolute;
   top: 0;
@@ -347,7 +347,7 @@ a {
 }
 .project-img-reverse:hover .p-link::before {
   opacity: 0;
-}
+} */
 
 .project-info {
   grid-column: 8 / 13;
@@ -641,10 +641,3 @@ a {
     gap: 2rem;
   }
 }
-
-/* 
-.skills-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 10rem;
-} */

@@ -318,14 +318,14 @@ a {
   position: relative;
 }
 
-.p-link::before {
+/* .p-link::before {
   content: "";
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
   opacity: 0.4;
-  transition: 0.3s ease;
+  transition: .3s ease;
   background-color: #64ffda;
   z-index: 2;
   border-radius: 0.3rem;
@@ -334,11 +334,9 @@ a {
 .project-img:hover .p-link::before {
   opacity: 0;
 }
-
 .project-img-reverse:hover .p-link::before {
   opacity: 0;
-}
-
+} */
 .project-info {
   grid-column: 8/13;
   display: flex;
@@ -629,11 +627,5 @@ a {
     gap: 2rem;
   }
 }
-/* 
-.skills-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 10rem;
-} */
 
 /*# sourceMappingURL=main.css.map */
