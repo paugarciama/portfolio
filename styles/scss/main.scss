@@ -148,7 +148,7 @@ body {
 .about-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  column-gap: 2rem;
+  column-gap: 5rem;
 }
 
 .about-text {
@@ -212,7 +212,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 150px;
   padding-bottom: 8rem;
 }
@@ -302,12 +302,13 @@ body {
 
 .project-img {
   grid-column: 1 / 7;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-img-reverse {
   grid-column: 7 / 13;
-  height: 100%;
 }
 
 .project-overlay {
@@ -318,7 +319,9 @@ body {
 }
 
 .project-screenshot {
-  max-width: 500px;
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 0.3rem;
 }
 
 .project-info {
