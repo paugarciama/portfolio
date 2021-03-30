@@ -222,6 +222,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
   text-align: center;
+  min-width: 400px;
 }
 
 .dev-grid p {
@@ -524,12 +525,13 @@ body {
   }
 }
 @media only screen and (max-width: 1030px) {
-  .skills-grid {
-    column-gap: 4rem;
-  }
-
   .other-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .skills-grid {
+    gap: 5rem;
   }
 }
 @media only screen and (max-width: 830px) {
