@@ -14,6 +14,10 @@ body {
   font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace; */
 }
 
+a {
+  text-decoration: none;
+}
+
 // LAYOUT
 .content {
   margin: 0 auto;
@@ -318,8 +322,17 @@ body {
   z-index: 1;
 }
 
-.project-overlay {
+.project-screenshot {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+.p-link::before {
+  content: "";
   position: absolute;
+  top: 0;
   height: 100%;
   width: 100%;
   opacity: 0.4;
@@ -329,18 +342,10 @@ body {
   border-radius: 0.3rem;
 }
 
-.project-screenshot {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 4/3;
-  border-radius: 0.3rem;
-  position: relative;
-}
-
-.project-img:hover .project-overlay {
+.project-img:hover .p-link::before {
   opacity: 0;
 }
-.project-img-reverse:hover .project-overlay {
+.project-img-reverse:hover .p-link::before {
   opacity: 0;
 }
 
@@ -362,6 +367,14 @@ body {
   font-family: $secondary;
   font-size: 1rem;
   color: #64ffda;
+  text-align: right;
+}
+
+.project-type-reverse {
+  font-family: $secondary;
+  font-size: 1rem;
+  color: #64ffda;
+  text-align: left;
 }
 
 .project-title {
@@ -370,6 +383,7 @@ body {
   color: #ccd6f6;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  text-align: right;
 }
 
 .project-title:hover {
@@ -404,6 +418,15 @@ body {
   font-size: 1rem;
   color: #8892b0;
   margin-bottom: 1.8rem;
+  text-align: right;
+}
+
+.project-skills-reverse {
+  font-family: $secondary;
+  font-size: 1rem;
+  color: #8892b0;
+  margin-bottom: 1.8rem;
+  text-align: left;
 }
 
 .project-links {
@@ -581,11 +604,17 @@ body {
   .other-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-@media only screen and (max-width: 1030px) {
   .skills-grid {
     gap: 5rem;
+  }
+  .project-grid {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .project-grid {
+    margin-bottom: 2rem;
   }
 }
 
@@ -605,6 +634,11 @@ body {
   }
   .other-grid {
     grid-template-columns: 1fr;
+  }
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
