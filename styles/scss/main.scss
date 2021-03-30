@@ -1,3 +1,8 @@
+
+$primary: 'Source Sans Pro', sans-serif;
+$secondary: 'Cutive Mono', monospace;
+
+
 // GLOBAL
 .html, 
 body {
@@ -38,7 +43,7 @@ body {
 }
 
 .nav-link {
-  font-family: monospace;
+  font-family: $secondary;
   font-size: 1rem;
   color: #ccd6f6;
   text-decoration: none;
@@ -52,13 +57,14 @@ body {
 }
 
 .number {
-  font-family: monospace;
+  font-family: $secondary;
   font-size: 0.7rem;
   color:#64ffda;
 }
 
 // BUTTONS
 .main-btn {
+  font-family: $primary;
   color: #64ffda;
   background-color: #0a192f;
   border: 1px solid #64ffda;
@@ -86,20 +92,24 @@ body {
 .my-name {
   color: #64ffda;
   font-size: 1.1rem;
+  font-family: $secondary;
 }
 
 .title, 
 .subtitle {
-  font-size: 4rem;
+  font-family: $primary;
+  font-size: 4.5rem;
   color: #ccd6f6;
   margin: 0;
 }
 
 .subtitle {
+  font-family: $primary;
   color: #8892b0;
 }
 
 .description {
+  font-family: $primary;
   font-size: 1.1rem;
   color: #8892b0;
   padding: 1rem 0;
@@ -124,12 +134,13 @@ body {
 }
 
 .section-title {
+  font-family: $primary;
   color: #ccd6f6;
   font-size: 1.8rem;
 }
 
 .section-number {
-  font-family: monospace;
+  font-family: $secondary;
   font-size: 1.8rem;
   color:#64ffda;
 }
@@ -141,6 +152,7 @@ body {
 }
 
 .about-text {
+  font-family: $primary;
   font-size: 1.1rem;
   color: #8892b0;
   line-height: 1.5;
@@ -213,7 +225,9 @@ body {
 }
 
 .grid-title {
+  font-family: $primary;
   color: #ccd6f6;
+  font-size: 1.2rem;
 }
 
 .fa-code {
@@ -230,6 +244,7 @@ body {
 }
 
 .dev-grid p {
+  font-family: $primary;
   color: #8892b0;
   border: 1px solid #8892b0;
   border-radius: 50%;
@@ -246,6 +261,7 @@ body {
 }
 
 .skills-list {
+  font-family: $primary;
   list-style: none;
   color: #8892b0;
   padding: 0;
@@ -285,22 +301,20 @@ body {
 }
 
 .project-img {
-  grid-column: 1 / 6;
+  grid-column: 1 / 7;
   height: 100%;
-  position: relative;
 }
 
 .project-img-reverse {
-  grid-column: 6 / 13¡;
+  grid-column: 7 / 13;
   height: 100%;
-  position: relative;
 }
 
 .project-overlay {
   background-color: #64ffda;
-  width: 600px;
+  width: 100%;
   height: 100%;
-  position: relative;
+  border-radius: 0.3rem;
 }
 
 .project-screenshot {
@@ -308,28 +322,27 @@ body {
 }
 
 .project-info {
-  grid-column: 7 / 13;
+  grid-column: 8 / 13;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  z-index: 1;
 }
 
 .project-info-reverse {
-  grid-column: 1 / 7;
+  grid-column: 1 / 6;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  z-index: 1;
 }
 
 .project-type {
-  font-family: monospace;
+  font-family: $secondary;
   font-size: 1rem;
   color: #64ffda;
 }
 
 .project-title {
+  font-family: $primary;
   font-size: 1.5rem;
   color: #ccd6f6;
   margin-top: 0.5rem;
@@ -342,6 +355,7 @@ body {
 }
 
 .project-description {
+  font-family: $primary;
   color: #8892b0;
   background-color: #112240;
   line-height: 1.5;
@@ -352,6 +366,7 @@ body {
 }
 
 .project-description-reverse {
+  font-family: $primary;
   color: #8892b0;
   background-color: #112240;
   line-height: 1.5;
@@ -362,7 +377,7 @@ body {
 }
 
 .project-skills {
-  font-family: monospace;
+  font-family: $secondary;
   font-size: 1rem;
   color: #8892b0;
   margin-bottom: 1.8rem;
@@ -421,6 +436,7 @@ body {
 }
 
 .other-title {
+  font-family: $primary;
   font-size: 1.2rem;
   color: #ccd6f6;
   margin-top: 0.5rem;
@@ -429,13 +445,14 @@ body {
 }
 
 .other-description {
+  font-family: $primary;
   color: #8892b0;
   line-height: 1.3;
   margin-bottom: 1.8rem;
 }
 
 .other-skills {
-  font-family: monospace;
+  font-family: $secondary;
   font-size: 0.9rem;
   color: #8892b0;
 }
@@ -469,12 +486,13 @@ body {
 }
 
 .contact-title {
-  font-family: monospace;
+  font-family: $secondary;
   font-size: 1.1rem;
   color: #64ffda;
 }
 
 .contact-subtitle {
+  font-family: $primary;
   font-size: 3rem;
   color: #ccd6f6;
   margin-top: 0.5rem;
@@ -482,6 +500,7 @@ body {
 }
 
 .contact-description {
+  font-family: $primary;
   color: #8892b0;
   line-height: 1.3;
   width: 50%;
@@ -506,7 +525,7 @@ body {
 
 .credits {
   font-size: 1rem;
-  font-family: monospace;
+  font-family: $secondary;
   color: #8892b0;
 }
 
