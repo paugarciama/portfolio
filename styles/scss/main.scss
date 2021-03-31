@@ -255,6 +255,7 @@ a {
   border-radius: 50%;
   padding: 2.7rem 1rem;
   transition: 0.2s ease;
+  
 }
 
 .dev-grid p:hover {
@@ -263,6 +264,7 @@ a {
   transform: scale(1.15);
   transition: 0.2s ease;
   cursor: alias;
+  box-shadow: 0.5px 0.5px 5px #64ffda;
 }
 
 .skills-list {
@@ -309,18 +311,21 @@ a {
 }
 
 .img-container {
+  box-shadow: 5px 5px 10px #081829;
   aspect-ratio: 16/9;
   position: relative;
   max-width: 605px;
 }
 
 .img-container1 {
+  box-shadow: 5px 5px 10px #081829;
   aspect-ratio: 16/9;
   position: relative;
   max-width: 605px;
 }
 
 .img-container2 {
+  box-shadow: 5px 5px 10px #081829;
   display: none;
   aspect-ratio: 16/9;
   position: relative;
@@ -407,6 +412,7 @@ a {
   text-align: right;
   max-width: 380px;
   min-width: 250px;
+  box-shadow: 5px 5px 10px #081829;
 }
 
 .project-description-reverse {
@@ -420,6 +426,7 @@ a {
   text-align: left;
   max-width: 380px;
   min-width: 250px;
+  box-shadow: 5px 5px 10px #081829;
 }
 
 .project-skills {
@@ -594,7 +601,7 @@ a {
 .credits {
   font-size: 1rem;
   font-family: $secondary;
-  color: #8892b0;
+  color: #ccd6f6;
 }
 
 // MEDIA QUERIES
