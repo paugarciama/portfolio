@@ -134,6 +134,17 @@ a {
   font-size: 1.8rem;
 }
 
+.section-title::after {
+  content: "";
+  display: inline-block;
+  width: 250px;
+  height: 100%;
+  margin-right: -100%;
+  margin-left: 1rem;
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid #8892b044;
+}
+
 .section-number {
   font-family: "Cutive Mono", monospace;
   font-size: 1.8rem;
@@ -674,6 +685,17 @@ a {
 
   .img-container2 {
     display: flex;
+  }
+
+  .section-title::after {
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+    margin-right: -100%;
+    margin-left: 1rem;
+    margin-bottom: 0.4rem;
+    border-bottom: 1px solid #8892b044;
   }
 }
 
