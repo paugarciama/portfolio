@@ -705,5 +705,15 @@ a {
     border-bottom: 1px solid #8892b044;
   }
 }
+@media only screen and (min-width: 830px) {
+  .social-media {
+    position: fixed;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+    margin-left: 25px;
+    margin-bottom: 100px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
