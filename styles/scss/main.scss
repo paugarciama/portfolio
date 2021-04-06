@@ -2,6 +2,16 @@
 $primary: 'Source Sans Pro', sans-serif;
 $secondary: 'Cutive Mono', monospace;
 
+$color1: #ccd6f6;
+$color2: #8892b0;
+$color3: #8892b044;
+$color4: #64ffda;
+$color5: #64ffdb11;
+$color6: #0a192f;
+$color7: #081829;
+$color8: #112240;
+
+
 
 // GLOBAL
 html, 
@@ -9,7 +19,7 @@ body {
   margin: 0;
   height: 100vh;
   font-family: Helvetica, sans-serif;
-  background-color: #0a192f;
+  background-color: $color6;
 }
 
 a {
@@ -47,29 +57,29 @@ a {
 .nav-link {
   font-family: $secondary;
   font-size: 1rem;
-  color: #ccd6f6;
+  color: $color1;
   text-decoration: none;
   margin: 0rem 1rem;
   transition: 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #64ffda;
+  color: $color4;
   transition: 0.3s ease;
 }
 
 .number {
   font-family: $secondary;
   font-size: 0.7rem;
-  color:#64ffda;
+  color: $color4;
 }
 
 // BUTTONS
 .main-btn {
   font-family: $primary;
-  color: #64ffda;
-  background-color: #0a192f;
-  border: 1px solid #64ffda;
+  color: $color4;
+  background-color: $color6;
+  border: 1px solid $color4;
   border-radius: 0.2rem;
   padding: 0.6rem 0.9rem;
   transition: 0.3s ease;
@@ -78,7 +88,7 @@ a {
 
 .main-btn:hover {
   cursor: pointer;
-  background-color: #64ffdb11;
+  background-color: $color5;
   transition: 0.3s ease;
 }
 
@@ -93,7 +103,7 @@ a {
 }
 
 .my-name {
-  color: #64ffda;
+  color: $color4;
   font-size: 1.1rem;
   font-family: $secondary;
 }
@@ -102,19 +112,19 @@ a {
 .subtitle {
   font-family: $primary;
   font-size: 4.5rem;
-  color: #ccd6f6;
+  color: $color1;
   margin: 0;
 }
 
 .subtitle {
   font-family: $primary;
-  color: #8892b0;
+  color: $color2;
 }
 
 .description {
   font-family: $primary;
   font-size: 1.1rem;
-  color: #8892b0;
+  color: $color2;
   padding: 1rem 0;
   max-width: 60%;
   line-height: 1.5;
@@ -138,7 +148,7 @@ a {
 
 .section-title {
   font-family: $primary;
-  color: #ccd6f6;
+  color: $color1;
   font-size: 1.8rem;
 }
 
@@ -150,13 +160,13 @@ a {
   margin-right: -100%;
   margin-left: 1rem;
   margin-bottom: 0.4rem;
-  border-bottom: 1px solid #8892b044;
+  border-bottom: 1px solid $color3;
 }
 
 .section-number {
   font-family: $secondary;
   font-size: 1.8rem;
-  color:#64ffda;
+  color: $color4;
 }
 
 .about-grid {
@@ -168,7 +178,7 @@ a {
 .about-text {
   font-family: $primary;
   font-size: 1.1rem;
-  color: #8892b0;
+  color: $color2;
   line-height: 1.5;
 }
 
@@ -187,7 +197,7 @@ a {
   width: 100%;
   opacity: 0.4;
   transition: .3s ease;
-  background-color: #64ffda;
+  background-color: $color4;
   z-index: 2;
   border-radius: 0.3rem;
 }
@@ -210,7 +220,7 @@ a {
 .post-profile {
   max-width: 300px;
   height: 260px;
-  border: 3px solid #64ffda;
+  border: 3px solid $color4;
   border-radius: 0.3rem;
   position: absolute;
   top: 0;
@@ -240,7 +250,7 @@ a {
 
 .grid-title {
   font-family: $primary;
-  color: #ccd6f6;
+  color: $color1;
   font-size: 1.2rem;
 }
 
@@ -259,26 +269,26 @@ a {
 
 .dev-grid p {
   font-family: $primary;
-  color: #8892b0;
-  border: 1px solid #8892b0;
+  color: $color2;
+  border: 1px solid $color2;
   border-radius: 50%;
   padding: 2.7rem 1rem;
   transition: 0.2s ease;
 }
 
 .dev-grid p:hover {
-  color: #64ffda;
-  border: 1px solid #64ffda;
+  color: $color4;
+  border: 1px solid $color4;
   transform: scale(1.15);
   transition: 0.2s ease;
   cursor: alias;
-  box-shadow: 0.5px 0.5px 5px #64ffda;
+  box-shadow: 0.5px 0.5px 5px $color4;
 }
 
 .skills-list {
   font-family: $primary;
   list-style: none;
-  color: #8892b0;
+  color: $color2;
   padding: 0;
   line-height: 2;
 }
@@ -294,7 +304,7 @@ a {
 }
 
 .fa-check {
-  color: #64ffda;
+  color: $color4;
   margin-right: 0.5rem;
   font-size: 0.8rem;
 }
@@ -319,21 +329,21 @@ a {
 }
 
 .img-container {
-  box-shadow: 5px 5px 10px #081829;
+  box-shadow: 5px 5px 10px $color7;
   aspect-ratio: 16/9;
   position: relative;
   max-width: 605px;
 }
 
 .img-container1 {
-  box-shadow: 5px 5px 10px #081829;
+  box-shadow: 5px 5px 10px $color7;
   aspect-ratio: 16/9;
   position: relative;
   max-width: 605px;
 }
 
 .img-container2 {
-  box-shadow: 5px 5px 10px #081829;
+  box-shadow: 5px 5px 10px $color7;
   display: none;
   aspect-ratio: 16/9;
   position: relative;
@@ -360,7 +370,7 @@ a {
   width: 100%;
   opacity: 0.4;
   transition: .3s ease;
-  background-color: #64ffda;
+  background-color: $color4;
   z-index: 2;
   border-radius: 0.3rem;
 }
@@ -384,35 +394,35 @@ a {
 .project-type {
   font-family: $secondary;
   font-size: 1rem;
-  color: #64ffda;
+  color: $color4;
   text-align: right;
 }
 
 .project-type-reverse {
   font-family: $secondary;
   font-size: 1rem;
-  color: #64ffda;
+  color: $color4;
   text-align: left;
 }
 
 .project-title {
   font-family: $primary;
   font-size: 1.5rem;
-  color: #ccd6f6;
+  color: $color1;
   margin-top: -0.5rem;
   margin-bottom: 1rem;
   text-align: right;
 }
 
 .project-title:hover {
-  color: #64ffda;
+  color: $color4;
   cursor: pointer;
 }
 
 .project-description {
   font-family: $primary;
-  color: #8892b0;
-  background-color: #112240;
+  color: $color2;
+  background-color: $color8;
   line-height: 1.5;
   padding: 2rem 1.5rem;
   border-radius: 0.3rem;
@@ -420,13 +430,13 @@ a {
   text-align: right;
   max-width: 380px;
   min-width: 250px;
-  box-shadow: 5px 5px 10px #081829;
+  box-shadow: 5px 5px 10px $color7;
 }
 
 .project-description-reverse {
   font-family: $primary;
-  color: #8892b0;
-  background-color: #112240;
+  color: $color2;
+  background-color: $color7;
   line-height: 1.5;
   padding: 2rem 1.5rem;
   border-radius: 0.3rem;
@@ -434,13 +444,13 @@ a {
   text-align: left;
   max-width: 380px;
   min-width: 250px;
-  box-shadow: 5px 5px 10px #081829;
+  box-shadow: 5px 5px 10px $color6;
 }
 
 .project-skills {
   font-family: $secondary;
   font-size: 1rem;
-  color: #8892b0;
+  color: $color2;
   margin-bottom: 1.8rem;
   text-align: right;
 }
@@ -448,7 +458,7 @@ a {
 .project-skills-reverse {
   font-family: $secondary;
   font-size: 1rem;
-  color: #8892b0;
+  color: $color2;
   margin-bottom: 1.8rem;
   text-align: left;
 }
@@ -464,14 +474,14 @@ a {
 .fa-instagram,
 .fa-linkedin {
   font-size: 1.3rem;
-  color: #ccd6f6;
+  color: $color1;
 }
 
 .fa-github:hover, 
 .fa-instagram:hover,
 .fa-linkedin:hover,
 .project-links .fa-external-link-alt:hover  {
-  color: #64ffda;
+  color: $color4;
 }
 
 // OTHER PROJECTS
@@ -491,9 +501,9 @@ a {
   gap: 1rem 1rem;
 }
 
-.other-card{
+.other-card{ 
   padding: 2rem;
-  background-color: #112240;
+  background-color: $color8;
   border-radius: 0.3rem;
   transition: 0.2s ease;
 }
@@ -501,10 +511,10 @@ a {
 .other-card:hover {
   cursor: pointer;
   transform: translateY(-10px);
-  box-shadow: 5px 5px 10px #081829;
+  box-shadow: 5px 5px 10px $color7;
   transition: 0.2s ease;
   .other-title {
-    color: #64ffda;
+    color: $color4;
     transition: 0.2s ease;
   }
 }
@@ -512,7 +522,7 @@ a {
 .other-title {
   font-family: $primary;
   font-size: 1.2rem;
-  color: #ccd6f6;
+  color: $color1;
   margin-top: 0.5rem;
   margin-bottom: 0;
   transition: 0.2s ease;
@@ -520,7 +530,7 @@ a {
 
 .other-description {
   font-family: $primary;
-  color: #8892b0;
+  color: $color2;
   line-height: 1.3;
   margin-bottom: 1.8rem;
 }
@@ -528,7 +538,7 @@ a {
 .other-skills {
   font-family: $secondary;
   font-size: 0.9rem;
-  color: #8892b0;
+  color: $color2;
 }
 
 .icons-container {
@@ -541,12 +551,12 @@ a {
 
 .fa-folder {
   font-size: 2.3rem;
-  color: #64ffda;
+  color: $color4;
 }
 
 .fa-external-link-alt {
   font-size: 1.1rem;
-  color: #8892b0;
+  color: $color2;
 }
 
 // CONTACT
@@ -562,13 +572,13 @@ a {
 .contact-title {
   font-family: $secondary;
   font-size: 1.1rem;
-  color: #64ffda;
+  color: $color4;
 }
 
 .contact-subtitle {
   font-family: $primary;
   font-size: 3rem;
-  color: #ccd6f6;
+  color: $color1;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -576,7 +586,7 @@ a {
 .contact-description {
   font-family: $primary;
   font-size: 1.1rem;
-  color: #8892b0;
+  color: $color2;
   line-height: 1.3;
   width: 50%;
   text-align: center;
@@ -585,13 +595,13 @@ a {
 
 .fa-phone {
   font-size: 1.5rem;
-  color: #ccd6f6;
+  color: $color1;
   padding-right: 1rem;
 }
 
 .fa-envelope {
   font-size: 1.5rem;
-  color: #ccd6f6;
+  color: $color1;
   padding-right: 1rem;
 }
 
@@ -618,7 +628,7 @@ a {
 .credits {
   font-size: 1rem;
   font-family: $secondary;
-  color: #ccd6f6;
+  color: $color1;
 }
 
 // MEDIA QUERIES
@@ -709,7 +719,7 @@ a {
     margin-right: -100%;
     margin-left: 1rem;
     margin-bottom: 0.4rem;
-    border-bottom: 1px solid #8892b044;
+    border-bottom: 1px solid $color3;
   }
 }
 
@@ -723,7 +733,7 @@ a {
     margin-bottom: 150px;
   }
   .sm-line {
-    border-left: 2px solid #ccd6f6;
+    border-left: 2px solid $color1;
     height: 120px;
     position: fixed;
     left: 33px;
