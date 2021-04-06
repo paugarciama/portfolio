@@ -712,7 +712,24 @@ a {
     left: 0;
     bottom: 0;
     margin-left: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+  }
+
+  .sm-line {
+    border-left: 2px solid #ccd6f6;
+    height: 120px;
+    position: fixed;
+    left: 33px;
+    bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .social-media {
+    margin-left: 50px;
+  }
+
+  .sm-line {
+    left: 58px;
   }
 }
 
