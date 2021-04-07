@@ -9,11 +9,16 @@ burger.addEventListener('click', e => {
     mobileMenu.classList.add('inactive');
   }
 
-  const bars = document.querySelector('.fa-bars') as HTMLElement;
-  
+  const icon1 = document.querySelector('.icon1') as HTMLSpanElement;
+  const icon2 = document.querySelector('.icon2') as HTMLSpanElement;
 
-  if (burger.id = 'inactive') {
-    burger.removeAttribute('id');
+
+  if (icon2.classList.contains('inactive')) {
+    icon2.classList.remove('inactive');
+    icon1.classList.add('inactive');
+  } else {
+    icon1.classList.remove('inactive');
+    icon2.classList.add('inactive');
   }
 })
 
