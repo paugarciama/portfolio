@@ -496,7 +496,7 @@ a {
 .project-description-reverse {
   font-family: "Source Sans Pro", sans-serif;
   color: #8892b0;
-  background-color: #081829;
+  background-color: #112240;
   line-height: 1.5;
   padding: 2rem 1.5rem;
   border-radius: 0.3rem;
@@ -504,7 +504,7 @@ a {
   text-align: left;
   max-width: 380px;
   min-width: 250px;
-  box-shadow: 5px 5px 10px #0a192f;
+  box-shadow: 5px 5px 10px #081829;
 }
 
 .project-skills {
