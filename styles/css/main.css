@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-  height: 100vh;
+  height: 100%;
   font-family: Helvetica, sans-serif;
   background-color: #0a192f;
 }
@@ -55,6 +55,7 @@ a {
   background-color: #112240;
   box-shadow: 5px 5px 10px #081829;
   border-top: 1px solid #64ffda;
+  z-index: 2;
 }
 
 .nav-links-mobile {
@@ -71,6 +72,17 @@ a {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
+}
+
+.menu-modal {
+  position: absolute;
+  width: 100vw;
+  height: 755vh;
+  top: 0;
+  left: 0;
+  margin-top: 5rem;
+  background-color: rgba(0, 0, 0, 0.253);
+  z-index: 1;
 }
 
 .mobile-btn {
@@ -786,7 +798,7 @@ a {
     left: 58px;
   }
 }
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 740px) {
   .mobile-btn {
     display: block;
   }
@@ -795,7 +807,7 @@ a {
     display: none;
   }
 }
-@media only screen and (min-width: 730px) {
+@media only screen and (min-width: 740px) {
   .nav-menu-mobile {
     display: none;
   }

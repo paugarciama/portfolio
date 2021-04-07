@@ -17,7 +17,7 @@ $color8: #112240;
 html, 
 body {
   margin: 0;
-  height: 100vh;
+  height: 100%;
   font-family: Helvetica, sans-serif;
   background-color: $color6;
 }
@@ -72,6 +72,7 @@ a {
   background-color: $color8;
   box-shadow: 5px 5px 10px $color7;
   border-top: 1px solid $color4;
+  z-index: 2;
 }
 
 .nav-links-mobile {
@@ -88,6 +89,17 @@ a {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
+}
+
+.menu-modal {
+  position: absolute;
+  width: 100vw;
+  height: 755vh;
+  top: 0;
+  left: 0;
+  margin-top: 5rem;
+  background-color: rgba(0, 0, 0, 0.253);
+  z-index: 1;
 }
 
 .mobile-btn {
@@ -805,7 +817,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 740px) {
   .mobile-btn {
     display: block;
   }
@@ -815,7 +827,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 730px) {
+@media only screen and (min-width: 740px) {
   .nav-menu-mobile {
     display: none;
   }
