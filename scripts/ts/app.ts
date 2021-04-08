@@ -24,7 +24,7 @@ links.forEach(target => target.addEventListener('click', e => {
   }
 }))
 
-const resumeBtn = document.querySelector('.resume-btn') as HTMLButtonElement;
+const resumeBtn = document.querySelector('.resume-btn-mobile') as HTMLButtonElement;
 resumeBtn.addEventListener('click', e => {
   if (!mobileMenu.classList.contains('inactive')) {
     changeDisplay();
