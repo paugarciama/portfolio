@@ -790,9 +790,6 @@ a {
     flex-direction: row;
     gap: 2rem;
   }
-  .other-grid {
-    grid-template-columns: 1fr;
-  }
   .project-grid {
     display: flex;
     flex-direction: column;
@@ -814,14 +811,7 @@ a {
     display: flex;
   }
   .section-title::after {
-    content: '';
-    display: inline-block;
-    width: 200px; 
-    height: 100%;
-    margin-right: -100%;
-    margin-left: 1rem;
-    margin-bottom: 0.4rem;
-    border-bottom: 1px solid $color3;
+    width: 40vw; 
   }
 }
 
@@ -873,5 +863,11 @@ a {
   .title, 
   .subtitle {
   font-size: 7.5vw;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .other-grid {
+    grid-template-columns: 1fr;
   }
 }
