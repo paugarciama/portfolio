@@ -199,6 +199,8 @@ a {
 .subtitle {
   font-family: $primary;
   color: $color2;
+  margin-top: 0.6rem;
+  line-height: 1;
 }
 
 .description {
@@ -725,6 +727,13 @@ a {
   }
 }
 
+@media only screen and (max-width: 950px) {
+  .title, 
+  .subtitle {
+  font-size: 7.5vw;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .header-container,
   .about-container ,
@@ -756,6 +765,10 @@ a {
   .nav-logo {
     margin-left: 25px;
   }
+  .title, 
+  .subtitle {
+  font-size: 36px;
+}
 }
 
 @media only screen and (max-width: 1030px) {
@@ -856,13 +869,6 @@ a {
 @media only screen and (min-width: 768px) {
   .nav-menu-mobile {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .title, 
-  .subtitle {
-  font-size: 7.5vw;
   }
 }
 
