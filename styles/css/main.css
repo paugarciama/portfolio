@@ -709,6 +709,14 @@ a {
 .footer-container {
     margin: 0 50px;
   }
+
+  .nav-logo {
+    margin-left: 50px;
+  }
+
+  .description {
+    max-width: 90%;
+  }
 }
 @media only screen and (max-width: 480px) {
   .header-container,
@@ -719,6 +727,10 @@ a {
 .contact-container,
 .footer-container {
     margin: 0 25px;
+  }
+
+  .nav-logo {
+    margin-left: 25px;
   }
 }
 @media only screen and (max-width: 1030px) {
