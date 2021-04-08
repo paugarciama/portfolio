@@ -688,7 +688,7 @@ a {
   color: #ccd6f6;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1080px) {
   .header-container,
 .about-container,
 .skills-container,
@@ -804,7 +804,7 @@ a {
     bottom: 0;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1080px) {
   .social-media {
     margin-left: 50px;
   }

@@ -22,7 +22,7 @@ links.forEach(function (target) { return target.addEventListener('click', functi
         changeDisplay();
     }
 }); });
-var resumeBtn = document.querySelector('.resume-btn');
+var resumeBtn = document.querySelector('.resume-btn-mobile');
 resumeBtn.addEventListener('click', function (e) {
     if (!mobileMenu.classList.contains('inactive')) {
         changeDisplay();
