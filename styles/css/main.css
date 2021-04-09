@@ -208,7 +208,8 @@ a {
   padding-bottom: 8rem;
 }
 
-.section-title {
+.section-title,
+.other-section-title {
   font-family: "Source Sans Pro", sans-serif;
   color: #ccd6f6;
   font-size: 1.8rem;
@@ -863,6 +864,10 @@ a {
     max-width: 100%;
     min-width: 150px;
   }
+
+  .mobile-btn {
+    margin-right: 25px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .flex-skills {
@@ -871,6 +876,15 @@ a {
     justify-content: center;
     align-items: center;
     gap: 0rem;
+  }
+
+  .section-title::after {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .section-title::after {
+    width: 0px;
   }
 }
 @media only screen and (min-width: 768px) {

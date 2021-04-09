@@ -228,7 +228,8 @@ a {
   padding-bottom: 8rem;
 }
 
-.section-title {
+.section-title,
+.other-section-title {
   font-family: $primary;
   color: $color1;
   font-size: 1.8rem;
@@ -875,6 +876,9 @@ a {
     max-width: 100%;
     min-width: 150px;
   }
+  .mobile-btn {
+    margin-right: 25px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
@@ -884,6 +888,15 @@ a {
     justify-content: center;
     align-items: center;
     gap: 0rem;
+  }
+  .section-title::after {
+    width: 100px; 
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .section-title::after {
+    width: 0px; 
   }
 }
 
@@ -909,7 +922,6 @@ a {
   .social-media {
     margin-left: 50px;
   }
-
   .sm-line {
     left: 58px;
   }
