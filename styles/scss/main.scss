@@ -718,6 +718,12 @@ a {
 }
 
 // MEDIA QUERIES
+@media only screen and (max-width: 1200px) {
+  .project-grid {
+    margin-bottom: 2rem;
+  }
+}
+
 @media only screen and (max-width: 1080px) {
   .header-container,
   .about-container ,
@@ -727,6 +733,18 @@ a {
   .contact-container,
   .footer-container {
     margin: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .other-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-grid {
+    gap: 5rem;
+  }
+  .project-grid {
+    margin-bottom: 1rem;
   }
 }
 
@@ -794,6 +812,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 580px) {
+  .other-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .header-container,
   .about-container ,
@@ -816,7 +840,7 @@ a {
     width: 150px;
   }
   .contact-description {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -829,26 +853,6 @@ a {
     gap: 0rem;
   }
 }
-
-@media only screen and (max-width: 1030px) {
-  .other-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .skills-grid {
-    gap: 5rem;
-  }
-  .project-grid {
-    margin-bottom: 1rem;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .project-grid {
-    margin-bottom: 2rem;
-  }
-}
-
-
 
 @media only screen and (min-width: 768px) {
   .social-media {
@@ -878,6 +882,9 @@ a {
   }
 }
 
+
+
+
 @media only screen and (max-width: 768px) {
   .mobile-btn {
     display: block;
@@ -894,8 +901,5 @@ a {
   }
 }
 
-@media only screen and (max-width: 580px) {
-  .other-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
+
