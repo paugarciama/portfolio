@@ -327,6 +327,26 @@ a {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
   text-align: center;
+  width: 400px;
+}
+
+.dev-list {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #8892b0;
+  margin-bottom: 2rem;
+}
+
+.dev-list p {
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  border: 1px solid #8892b0;
+  border-radius: 0.3rem;
+  margin-bottom: 0.1rem;
 }
 
 .dev-grid p {
@@ -338,7 +358,8 @@ a {
   transition: 0.2s ease;
 }
 
-.dev-grid p:hover {
+.dev-grid p:hover,
+.dev-list p:hover {
   color: #64ffda;
   border: 1px solid #64ffda;
   transform: scale(1.15);
@@ -818,9 +839,12 @@ a {
     font-size: 36px;
   }
 
+  .dev-list {
+    display: flex;
+  }
+
   .dev-grid {
-    grid-template-columns: repeat(2, 1fr);
-    width: 150px;
+    display: none;
   }
 
   .contact-description {
