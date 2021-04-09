@@ -707,6 +707,7 @@ a {
 
 .social-media {
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -880,6 +881,25 @@ a {
 
   .section-title::after {
     width: 100px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .overlay {
+    height: 100%;
+    width: 100%;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .post-profile {
+    height: 100%;
+    transform: translateX(15px) translateY(10px);
+  }
+
+  .profile-container:hover .post-profile {
+    transform: translateX(10px) translateY(5px);
   }
 }
 @media only screen and (max-width: 320px) {
