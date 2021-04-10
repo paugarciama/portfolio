@@ -22,6 +22,12 @@
   @include button;
   display: none;
   margin-right: 3rem;
+  @include md-tablet {
+    display: block;
+  }
+  @include l-mobile {
+    margin-right: 25px;
+  }
 }
 
 .resume-btn-mobile {

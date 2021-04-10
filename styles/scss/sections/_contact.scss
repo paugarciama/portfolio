@@ -2,8 +2,8 @@
 
 .contact-container {
   @include flexCCC;
-  margin: 0 150px;
-  padding-bottom: 8rem;
+  padding-bottom: $pb;
+  @include main-layout;
 }
 
 .contact-title {
@@ -26,6 +26,9 @@
   width: 50%;
   text-align: center;
   padding-bottom: 2rem;
+  @include l-mobile {
+    width: 100%;
+  }
 }
 
 .fa-phone,

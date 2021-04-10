@@ -2,8 +2,8 @@
 
 .about-container {
   @include flexCCFS;
-  margin: 0 150px;
   padding-bottom: $pb;
+  @include main-layout;
 }
 
 .section-title,
@@ -20,6 +20,15 @@
   margin-left: 1rem;
   margin-bottom: 0.4rem;
   border-bottom: 1px solid $color3;
+  @include sm-desktop {
+    width: 40vw; 
+  }
+  @include md-mobile {
+    width: 100px; 
+  }
+  @include tn-mobile {
+    width: 0px; 
+  }
 }
 
 .section-number {
@@ -31,6 +40,10 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 5rem;
+  @include sm-desktop {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
 }
 
 .about-text {
@@ -52,6 +65,9 @@
   background-color: $color4;
   z-index: 2;
   border-radius: 0.3rem;
+  @include sm-mobile {
+    @include wh100;
+  }
 }
 
 .profile-container:hover .overlay {
@@ -60,6 +76,9 @@
 
 .profile-container:hover .post-profile {
   transform: translateX(15px) translateY(10px);
+  @include sm-mobile {
+    transform: translateX(10px) translateY(5px);
+  }
 }
 
 .profile {
@@ -67,6 +86,9 @@
   border-radius: 0.3rem;
   position: relative;
   z-index: 1;
+  @include sm-mobile {
+    width: 100%;
+  }
 }
 
 .post-profile {
@@ -77,4 +99,8 @@
   border-radius: 0.3rem;
   transform: translateX(20px) translateY(15px);
   transition: .3s ease;
+  @include sm-mobile {
+    height: 100%;
+    transform: translateX(15px) translateY(10px);
+  }
 }

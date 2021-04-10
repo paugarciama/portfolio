@@ -12,6 +12,12 @@
 
 .nav-logo {
   margin-left: 3rem;
+  @include md-tablet {
+    margin-left: 50px;
+  }
+  @include l-mobile {
+    margin-left: 25px;
+  }
 }
 .logo {
   width: 3rem;
@@ -19,6 +25,9 @@
 
 .nav-menu {
   display: inline-block;
+  @include md-tablet {
+    display: none;
+  }
 }
 
 .nav-menu-mobile {
@@ -31,6 +40,9 @@
   box-shadow: 5px 10px 20px $color7;
   border-top: 1px solid $color4;
   z-index: 4;
+  @include md-tablet2 {
+    display: none;
+  }
 }
 
 .nav-links-mobile {

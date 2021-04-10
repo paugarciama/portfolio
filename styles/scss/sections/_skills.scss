@@ -2,8 +2,8 @@
 
 .skills-container {
   @include flexCCC;
-  margin: 0 150px;
-  padding-bottom: 8rem;
+  padding-bottom: $pb;
+  @include main-layout;
 }
 
 .skills-grid {
@@ -11,6 +11,25 @@
   grid-template-columns: 2fr 170px;
   column-gap: 10rem;
   width: 100%;
+  @include md-desktop {
+    column-gap: 5rem;
+  }
+  @include sm-desktop {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}
+
+.flex-skills {
+  @include sm-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  @include md-mobile {
+    @include flexCCC;
+    gap: 0rem;
+  }
 }
 
 .grid-title {
@@ -29,6 +48,9 @@
   column-gap: 2rem;
   text-align: center;
   width: 400px;
+  @include l-mobile {
+    display: none;
+  }
 }
 
 .dev-list {
@@ -36,6 +58,9 @@
   @include text2;
   display: none;
   margin-bottom: 2rem;
+  @include l-mobile {
+    display: flex;
+  }
 }
 
 .dev-list p {

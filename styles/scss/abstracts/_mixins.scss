@@ -59,6 +59,19 @@
   width: 100%;
 }
 
+@mixin main-layout {
+  margin: 0 150px;
+  @include l-desktop {
+    margin: 0 100px;
+  }
+  @include md-tablet {
+    margin: 0 50px;
+  }
+  @include l-mobile {
+    margin: 0 25px;
+  }
+}
+
 // SECTION 
 @mixin description {
   @include text2;
@@ -89,4 +102,49 @@
   padding: 0.6rem 0.9rem;
   transition: 0.3s ease;
   outline: none;
+}
+
+// MEDIA QUERIES
+@mixin l-desktop {
+  @media (max-width: 1080px) { @content }
+}
+
+@mixin md-desktop {
+  @media (max-width: 950px) { @content }
+}
+
+@mixin sm-desktop {
+  @media (max-width: 830px) { @content }
+}
+
+@mixin md-tablet {
+  @media (max-width: 768px) { @content }
+}
+
+@mixin sm-tablet {
+  @media (max-width: 580px) { @content }
+}
+
+@mixin l-mobile {
+  @media (max-width: 480px) { @content }
+}
+
+@mixin md-mobile {
+  @media (max-width: 420px) { @content }
+}
+
+@mixin sm-mobile {
+  @media (max-width: 360px) { @content }
+}
+
+@mixin tn-mobile {
+  @media (max-width: 320px) { @content }
+}
+
+@mixin md-tablet2 {
+  @media (min-width: 768px) { @content }
+}
+
+@mixin l-desktop2 {
+  @media (min-width: 768px) { @content }
 }

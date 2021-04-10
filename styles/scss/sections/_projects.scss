@@ -2,8 +2,8 @@
 
 .projects-container {
   @include flexCCFS;
-  margin: 0 150px;
-  padding-bottom: 8rem;
+  padding-bottom: $pb;
+  @include main-layout;
 }
 
 .project-grid {
@@ -14,6 +14,15 @@
   gap: 1rem;  
   margin-bottom: 2rem;
   width: 100%;
+  @include md-desktop {
+    margin-bottom: 1rem;
+  }
+  @include sm-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .img-container, 
@@ -25,8 +34,23 @@
   max-width: 605px;
 }
 
+.img-container {
+  @include sm-desktop {
+    aspect-ratio: 16/9;
+  }
+}
+
+.img-container1 {
+  @include sm-desktop {
+    display: none;
+  }
+}
+
 .img-container2 {
   display: none;
+  @include sm-desktop {
+    display: flex;
+  }
 }
 
 .project-screenshot {
@@ -90,11 +114,25 @@
 .project-description {
   @include description;
   text-align: right;
+  @include sm-desktop {
+    max-width: 100%;
+  }
+  @include l-mobile {
+    max-width: 100%;
+    min-width: 150px;
+  }
 }
 
 .project-description-reverse {
   @include description;
   text-align: left;
+  @include sm-desktop {
+    max-width: 100%;
+  }
+  @include l-mobile {
+    max-width: 100%;
+    min-width: 150px;
+  }
 }
 
 .project-skills {

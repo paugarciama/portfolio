@@ -2,14 +2,38 @@
 
 .footer-container {
   @include flexCCC;
-  margin: 0 150px;
   padding-bottom: 1.5rem;
+  @include main-layout;
 }
 
 .social-media {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  @include md-tablet2 {
+    position: fixed;
+    flex-direction: column;
+    left: 0; 
+    bottom: 0; 
+    margin-left: 25px;
+    margin-bottom: 150px;
+  }
+  @include l-desktop2 {
+    margin-left: 50px;
+  }
+}
+
+.sm-line {
+  @include md-tablet2 {
+    border-left: 2px solid $color1;
+    height: 120px;
+    position: fixed;
+    left: 33px;
+    bottom: 0;
+  }
+  @include l-desktop2 {
+    left: 58px;
+  }
 }
 
 .credits {

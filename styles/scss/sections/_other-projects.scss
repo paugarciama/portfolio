@@ -2,8 +2,8 @@
 
 .other-projects-container {
   @include flexCCFS;
-  margin: 0 150px;
-  padding-bottom: 8rem;
+  padding-bottom: $pb;
+  @include main-layout;
 }
 
 .other-grid {
@@ -11,6 +11,12 @@
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   gap: 1rem 1rem;
+  @include md-desktop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include sm-tablet {
+    grid-template-columns: 1fr;
+  }
 }
 
 .other-card{ 
