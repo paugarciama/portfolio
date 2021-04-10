@@ -1,0 +1,85 @@
+@use '../abstracts' as *;
+
+.skills-container {
+  @include flexCCC;
+  margin: 0 150px;
+  padding-bottom: 8rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 2fr 170px;
+  column-gap: 10rem;
+  width: 100%;
+}
+
+.grid-title {
+  @include sectionTitle;
+  font-size: 1.2rem;
+}
+
+.fa-code {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.dev-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  text-align: center;
+  width: 400px;
+}
+
+.dev-list {
+  @include flexCCC;
+  @include text2;
+  display: none;
+  margin-bottom: 2rem;
+}
+
+.dev-list p {
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  border: 1px solid $color2;
+  border-radius: 0.3rem;
+  margin-bottom: 0.1rem;
+}
+
+.dev-grid p {
+  @include text2;
+  border: 1px solid $color2;
+  border-radius: 50%;
+  padding: 2.7rem 1rem;
+  transition: 0.2s ease;
+}
+
+.dev-grid p:hover,
+.dev-list p:hover {
+  color: $color4;
+  border: $border1;
+  transform: scale(1.15);
+  transition: 0.2s ease;
+  cursor: alias;
+  box-shadow: 0.5px 0.5px 5px $color4;
+}
+
+.skills-list {
+  @include text2;
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+
+.fa-tools, 
+.fa-lightbulb {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.fa-check {
+  color: $color4;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}

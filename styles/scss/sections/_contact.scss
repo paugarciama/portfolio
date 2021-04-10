@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.contact-container {
+  @include flexCCC;
+  margin: 0 150px;
+  padding-bottom: 8rem;
+}
+
+.contact-title {
+  @include numbers;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.contact-subtitle {
+  @include sectionTitle;
+  font-size: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-description {
+  @include text;
+  line-height: 1.3;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.fa-phone,
+.fa-envelope  {
+  font-size: 1.5rem;
+  color: $color1;
+  padding-right: 1rem;
+}

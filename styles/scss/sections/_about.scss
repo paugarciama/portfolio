@@ -1,0 +1,80 @@
+@use '../abstracts' as *;
+
+.about-container {
+  @include flexCCFS;
+  margin: 0 150px;
+  padding-bottom: $pb;
+}
+
+.section-title,
+.other-section-title {
+  @include sectionTitle;
+}
+
+.section-title::after {
+  content: '';
+  display: inline-block;
+  width: 250px; 
+  height: 100%;
+  margin-right: -100%;
+  margin-left: 1rem;
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid $color3;
+}
+
+.section-number {
+  @include numbers;
+  font-size: 1.8rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 5rem;
+}
+
+.about-text {
+  @include text;
+}
+
+.profile-container {
+  max-width: 300px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.overlay {
+  @include overlays;
+  height: 260px;
+  width: 100%;
+  opacity: 0.4;
+  transition: .3s ease;
+  background-color: $color4;
+  z-index: 2;
+  border-radius: 0.3rem;
+}
+
+.profile-container:hover .overlay {
+  opacity: 0;
+}
+
+.profile-container:hover .post-profile {
+  transform: translateX(15px) translateY(10px);
+}
+
+.profile {
+  max-width: 300px;
+  border-radius: 0.3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.post-profile {
+  @include overlays;
+  max-width: 300px;
+  height: 260px;
+  border: 3px solid $color4;
+  border-radius: 0.3rem;
+  transform: translateX(20px) translateY(15px);
+  transition: .3s ease;
+}

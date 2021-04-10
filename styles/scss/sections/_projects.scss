@@ -1,0 +1,129 @@
+@use '../abstracts' as *;
+
+.projects-container {
+  @include flexCCFS;
+  margin: 0 150px;
+  padding-bottom: 8rem;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;  
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.img-container, 
+.img-container1,
+.img-container2 {
+  box-shadow: 5px 5px 10px $color7;
+  aspect-ratio: 16/9;
+  position: relative;
+  max-width: 605px;
+}
+
+.img-container2 {
+  display: none;
+}
+
+.project-screenshot {
+  @include wh100;
+  bottom: 0;
+  border-radius: 0.3rem;
+  position: relative;
+  aspect-ratio: 16/9;
+}
+
+.p-link::before {
+  content: "";
+  @include overlays;
+  @include wh100;
+  opacity: 0.4;
+  transition: .3s ease;
+  background-color: $color4;
+  z-index: 2;
+  border-radius: 0.3rem;
+}
+
+.img-container:hover .p-link::before {
+  opacity: 0;
+}
+
+.project-info {
+  @include flexC100;
+  align-items: flex-end;
+}
+
+.project-info-reverse {
+  @include flexC100;
+  align-items: flex-start;
+}
+
+.project-type {
+  @include numbers;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.project-type-reverse {
+  @include numbers;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.project-title {
+  @include sectionTitle;
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.project-title:hover {
+  color: $color4;
+  cursor: pointer;
+}
+
+.project-description {
+  @include description;
+  text-align: right;
+}
+
+.project-description-reverse {
+  @include description;
+  text-align: left;
+}
+
+.project-skills {
+  @include skills;
+  text-align: right;
+}
+
+.project-skills-reverse {
+  @include skills;
+  text-align: left;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-links .fa-external-link-alt,
+.fa-github,
+.fa-instagram,
+.fa-linkedin {
+  font-size: 1.3rem;
+  color: $color1;
+}
+
+.fa-github:hover, 
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.project-links .fa-external-link-alt:hover  {
+  color: $color4;
+}

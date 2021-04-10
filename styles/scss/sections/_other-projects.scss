@@ -1,0 +1,70 @@
+@use '../abstracts' as *;
+
+.other-projects-container {
+  @include flexCCFS;
+  margin: 0 150px;
+  padding-bottom: 8rem;
+}
+
+.other-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 1rem 1rem;
+}
+
+.other-card{ 
+  padding: 2rem;
+  background-color: $color8;
+  border-radius: 0.3rem;
+  transition: 0.2s ease;
+}
+
+.other-card:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  box-shadow: $regularBox;
+  transition: 0.2s ease;
+  .other-title {
+    color: $color4;
+    transition: 0.2s ease;
+  }
+}
+
+.other-title {
+  @include sectionTitle;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  transition: 0.2s ease;
+}
+
+.other-description {
+  @include text2;
+  line-height: 1.3;
+  margin-bottom: 1.8rem;
+}
+
+.other-skills {
+  font-family: $secondary;
+  font-size: 0.9rem;
+  color: $color2;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.fa-folder {
+  font-size: 2.3rem;
+  color: $color4;
+}
+
+.fa-external-link-alt {
+  font-size: 1.1rem;
+  color: $color2;
+}
