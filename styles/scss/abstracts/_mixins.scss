@@ -1,0 +1,46 @@
+@use 'variables' as *;
+
+// MIXINS
+
+// Layout
+@mixin flexCCFS {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin flexCCC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// Text
+@mixin sectionTitle {
+  font-family: $primary;
+  color: $color1;
+  font-size: 1.8rem;
+}
+
+@mixin text {
+  font-family: $primary;
+  font-size: 1.1rem;
+  color: $color2;
+  line-height: 1.5;
+}
+
+@mixin numbers {
+  font-family: $secondary;
+  color: $color4;
+}
+
+// Position 
+@mixin overlays {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

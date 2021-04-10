@@ -1,17 +1,7 @@
-
-$primary: 'Source Sans Pro', sans-serif;
-$secondary: 'Cutive Mono', monospace;
-
-$color1: #ccd6f6;
-$color2: #8892b0;
-$color3: #8892b044;
-$color4: #64ffda;
-$color5: #64ffdb11;
-$color6: #0a192f;
-$color7: #081829;
-$color8: #112240;
-
-
+@use 'abstracts' as *;
+/* @use 'components/all';
+@use 'layout/all';
+@use 'sections/all'; */
 
 // GLOBAL
 html, 
@@ -35,10 +25,6 @@ a {
 }
 
 .inactive {
-  display: none;
-}
-
-#inactive {
   display: none;
 }
 
@@ -85,20 +71,13 @@ a {
 }
 
 .nav-links-mobile div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  @include flexCCFS;
   gap: 4rem;
 }
 
 .menu-modal {
-  position: absolute;
+  @include overlays;
   height: 755vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   margin-top: 5rem;
   backdrop-filter: blur(5px);
   z-index: 3;
@@ -140,9 +119,8 @@ a {
 }
 
 .number {
-  font-family: $secondary;
+  @include numbers;
   font-size: 0.7rem;
-  color: $color4;
 }
 
 // BUTTONS
@@ -174,10 +152,7 @@ a {
 
 // HEADER
 .header-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  @include flexCCFS;
   min-height: 100vh;
   margin: 0 150px;
 }
@@ -188,8 +163,7 @@ a {
   font-family: $secondary;
 }
 
-.title, 
-.subtitle {
+.title {
   font-family: $primary;
   font-size: 4.5rem;
   color: $color1;
@@ -197,19 +171,16 @@ a {
 }
 
 .subtitle {
-  font-family: $primary;
+  @extend .title;
   color: $color2;
   margin-top: 0.6rem;
   line-height: 1;
 }
 
 .description {
-  font-family: $primary;
-  font-size: 1.1rem;
-  color: $color2;
+  @include text;
   padding: 1rem 0;
   max-width: 60%;
-  line-height: 1.5;
 }
 
 .header-btn {
@@ -220,19 +191,14 @@ a {
 
 // ABOUT ME
 .about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  @include flexCCFS;
   margin: 0 150px;
-  padding-bottom: 8rem;
+  padding-bottom: $pb;
 }
 
 .section-title,
 .other-section-title {
-  font-family: $primary;
-  color: $color1;
-  font-size: 1.8rem;
+  @include sectionTitle;
 }
 
 .section-title::after {
@@ -247,9 +213,8 @@ a {
 }
 
 .section-number {
-  font-family: $secondary;
+  @include numbers;
   font-size: 1.8rem;
-  color: $color4;
 }
 
 .about-grid {
@@ -259,10 +224,7 @@ a {
 }
 
 .about-text {
-  font-family: $primary;
-  font-size: 1.1rem;
-  color: $color2;
-  line-height: 1.5;
+  @include text;
 }
 
 .profile-container {
@@ -272,11 +234,7 @@ a {
   margin: 0 auto;
 }
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  @include overlays;
   height: 260px;
   width: 100%;
   opacity: 0.4;
@@ -302,25 +260,18 @@ a {
 }
 
 .post-profile {
+  @include overlays;
   max-width: 300px;
   height: 260px;
   border: 3px solid $color4;
   border-radius: 0.3rem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   transform: translateX(20px) translateY(15px);
   transition: .3s ease;
 }
 
 // SKILLS
 .skills-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCCC;
   margin: 0 150px;
   padding-bottom: 8rem;
 }
@@ -333,8 +284,7 @@ a {
 }
 
 .grid-title {
-  font-family: $primary;
-  color: $color1;
+  @include sectionTitle;
   font-size: 1.2rem;
 }
 
@@ -415,10 +365,7 @@ a {
 
 // PROJECTS
 .projects-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  @include flexCCFS;
   margin: 0 150px;
   padding-bottom: 8rem;
 }
@@ -593,10 +540,7 @@ a {
 
 // OTHER PROJECTS
 .other-projects-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  @include flexCCFS;
   margin: 0 150px;
   padding-bottom: 8rem;
 }
@@ -668,10 +612,7 @@ a {
 
 // CONTACT
 .contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCCC;
   margin: 0 150px;
   padding-bottom: 8rem;
 }
@@ -702,13 +643,8 @@ a {
   padding-bottom: 2rem;
 }
 
-.fa-phone {
-  font-size: 1.5rem;
-  color: $color1;
-  padding-right: 1rem;
-}
-
-.fa-envelope {
+.fa-phone,
+.fa-envelope  {
   font-size: 1.5rem;
   color: $color1;
   padding-right: 1rem;
@@ -716,10 +652,7 @@ a {
 
 // FOOTER 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCCC;
   margin: 0 150px;
   padding-bottom: 1.5rem;
 }
