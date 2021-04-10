@@ -21,6 +21,18 @@
   @include l-desktop2 {
     margin-left: 50px;
   }
+  animation: appear10 1.5s;
+}
+
+@keyframes appear10 {
+  0% {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(0px);
+  }
 }
 
 .sm-line {
@@ -34,6 +46,7 @@
   @include l-desktop2 {
     left: 58px;
   }
+  animation: appear10 1.5s;
 }
 
 .credits {

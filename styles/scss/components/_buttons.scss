@@ -16,6 +16,18 @@
 .header-btn {
   @extend .contact-btn;
   margin-top: 2rem;
+  animation: appear9 1.5s;
+}
+
+@keyframes appear9 {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(0px);
+  }
 }
 
 .mobile-btn {
@@ -27,6 +39,19 @@
   }
   @include l-mobile {
     margin-right: 25px;
+  }
+  animation: appear3 1s;
+}
+
+@keyframes appear3 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateX(0px);
+
   }
 }
 

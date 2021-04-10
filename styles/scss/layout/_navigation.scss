@@ -18,15 +18,38 @@
   @include l-mobile {
     margin-left: 25px;
   }
+  animation: appear1 1s;
 }
 .logo {
   width: 3rem;
+}
+
+@keyframes appear1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 .nav-menu {
   display: inline-block;
   @include md-tablet {
     display: none;
+  }
+  animation: appear2 1s;
+}
+
+@keyframes appear2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateX(0px);
+
   }
 }
 
@@ -42,6 +65,16 @@
   z-index: 4;
   @include md-tablet2 {
     display: none;
+  }
+  animation: appear4 0.2s;
+}
+
+@keyframes appear4 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
   }
 }
 
