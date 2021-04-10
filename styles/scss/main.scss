@@ -302,12 +302,9 @@ a {
 }
 
 .dev-list {
+  @include flexCCC;
+  @include text2;
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: $primary;
-  color: $color2;
   margin-bottom: 2rem;
 }
 
@@ -321,9 +318,8 @@ a {
 }
 
 .dev-grid p {
-  font-family: $primary;
-  color: $color2;
-  border: 1px solid $color2;
+  @include text2;
+  border: $border1;
   border-radius: 50%;
   padding: 2.7rem 1rem;
   transition: 0.2s ease;
@@ -332,7 +328,7 @@ a {
 .dev-grid p:hover,
 .dev-list p:hover {
   color: $color4;
-  border: 1px solid $color4;
+  border: $border1;
   transform: scale(1.15);
   transition: 0.2s ease;
   cursor: alias;
@@ -340,18 +336,13 @@ a {
 }
 
 .skills-list {
-  font-family: $primary;
+  @include text2;
   list-style: none;
-  color: $color2;
   padding: 0;
   line-height: 2;
 }
 
-.fa-tools {
-  font-size: 2rem;
-  margin-right: 1rem;
-}
-
+.fa-tools, 
 .fa-lightbulb {
   font-size: 2rem;
   margin-right: 1rem;
@@ -380,14 +371,9 @@ a {
   width: 100%;
 }
 
-.img-container {
-  box-shadow: 5px 5px 10px $color7;
-  aspect-ratio: 16/9;
-  position: relative;
-  max-width: 605px;
-}
-
-.img-container1 {
+.img-container, 
+.img-container1,
+.img-container2 {
   box-shadow: 5px 5px 10px $color7;
   aspect-ratio: 16/9;
   position: relative;
@@ -395,16 +381,11 @@ a {
 }
 
 .img-container2 {
-  box-shadow: 5px 5px 10px $color7;
   display: none;
-  aspect-ratio: 16/9;
-  position: relative;
-  max-width: 605px;
 }
 
 .project-screenshot {
-  width: 100%;
-  height: 100%;
+  @include wh100;
   bottom: 0;
   border-radius: 0.3rem;
   position: relative;
@@ -413,13 +394,8 @@ a {
 
 .p-link::before {
   content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  @include overlays;
+  @include wh100;
   opacity: 0.4;
   transition: .3s ease;
   background-color: $color4;
@@ -432,37 +408,30 @@ a {
 }
 
 .project-info {
-  display: flex;
-  flex-direction: column;
+  @include flexC100;
   align-items: flex-end;
-  width: 100%;
 }
 
 .project-info-reverse {
-  display: flex;
-  flex-direction: column;
+  @include flexC100;
   align-items: flex-start;
-  width: 100%;
 }
 
 .project-type {
-  font-family: $secondary;
+  @include numbers;
   font-size: 1rem;
-  color: $color4;
   text-align: right;
 }
 
 .project-type-reverse {
-  font-family: $secondary;
+  @include numbers;
   font-size: 1rem;
-  color: $color4;
   text-align: left;
 }
 
 .project-title {
-  font-family: $primary;
+  @include sectionTitle;
   font-size: 1.5rem;
-  color: $color1;
   margin-top: -0.5rem;
   margin-bottom: 1rem;
   text-align: right;
@@ -474,46 +443,22 @@ a {
 }
 
 .project-description {
-  font-family: $primary;
-  color: $color2;
-  background-color: $color8;
-  line-height: 1.5;
-  padding: 2rem 1.5rem;
-  border-radius: 0.3rem;
-  margin-bottom: 1rem;
+  @include description;
   text-align: right;
-  max-width: 380px;
-  min-width: 250px;
-  box-shadow: 5px 5px 10px $color7;
 }
 
 .project-description-reverse {
-  font-family: $primary;
-  color: $color2;
-  background-color: $color8;
-  line-height: 1.5;
-  padding: 2rem 1.5rem;
-  border-radius: 0.3rem;
-  margin-bottom: 1rem;
+  @include description;
   text-align: left;
-  max-width: 380px;
-  min-width: 250px;
-  box-shadow: 5px 5px 10px $color7;
 }
 
 .project-skills {
-  font-family: $secondary;
-  font-size: 1rem;
-  color: $color2;
-  margin-bottom: 1.8rem;
+  @include skills;
   text-align: right;
 }
 
 .project-skills-reverse {
-  font-family: $secondary;
-  font-size: 1rem;
-  color: $color2;
-  margin-bottom: 1.8rem;
+  @include skills;
   text-align: left;
 }
 
@@ -562,7 +507,7 @@ a {
 .other-card:hover {
   cursor: pointer;
   transform: translateY(-10px);
-  box-shadow: 5px 5px 10px $color7;
+  box-shadow: $regularBox;
   transition: 0.2s ease;
   .other-title {
     color: $color4;
@@ -571,17 +516,15 @@ a {
 }
 
 .other-title {
-  font-family: $primary;
+  @include sectionTitle;
   font-size: 1.2rem;
-  color: $color1;
   margin-top: 0.5rem;
   margin-bottom: 0;
   transition: 0.2s ease;
 }
 
 .other-description {
-  font-family: $primary;
-  color: $color2;
+  @include text2;
   line-height: 1.3;
   margin-bottom: 1.8rem;
 }
@@ -618,25 +561,21 @@ a {
 }
 
 .contact-title {
-  font-family: $secondary;
+  @include numbers;
   font-size: 1.1rem;
-  color: $color4;
   text-align: center;
 }
 
 .contact-subtitle {
-  font-family: $primary;
+  @include text2;
   font-size: 3rem;
-  color: $color1;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .contact-description {
-  font-family: $primary;
-  font-size: 1.1rem;
-  color: $color2;
+  @include text;
   line-height: 1.3;
   width: 50%;
   text-align: center;
@@ -879,9 +818,6 @@ a {
   }
 }
 
-
-
-
 @media only screen and (max-width: 768px) {
   .mobile-btn {
     display: block;
@@ -897,6 +833,3 @@ a {
     display: none;
   }
 }
-
-
-
