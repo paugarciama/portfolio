@@ -76,14 +76,14 @@ body {
   scroll-behavior: smooth;
 }
 
+.inactive {
+  display: none;
+}
+
 .content {
   margin: 0 auto;
   width: 100%;
   max-width: 1300px;
-}
-
-.inactive {
-  display: none;
 }
 
 .nav-bar {
@@ -194,15 +194,16 @@ body {
 }
 
 .my-name {
+  font-family: "Cutive Mono", monospace;
   color: #64ffda;
   font-size: 1.1rem;
-  font-family: "Cutive Mono", monospace;
 }
 
 .title, .subtitle {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 4.5rem;
   color: #ccd6f6;
+  font-size: 1.8rem;
+  font-size: 4.5rem;
   margin: 0;
 }
 
@@ -219,6 +220,28 @@ body {
   line-height: 1.5;
   padding: 1rem 0;
   max-width: 60%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 150px;
+  padding-bottom: 1.5rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.credits {
+  font-size: 1rem;
+  font-family: "Cutive Mono", monospace;
+  color: #ccd6f6;
+  text-align: center;
 }
 
 .about-container {
@@ -699,28 +722,6 @@ body {
   font-size: 1.5rem;
   color: #ccd6f6;
   padding-right: 1rem;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 150px;
-  padding-bottom: 1.5rem;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.credits {
-  font-size: 1rem;
-  font-family: "Cutive Mono", monospace;
-  color: #ccd6f6;
-  text-align: center;
 }
 
 @media only screen and (max-width: 1200px) {

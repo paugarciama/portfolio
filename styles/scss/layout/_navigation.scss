@@ -1,0 +1,90 @@
+@use '../abstracts' as *;
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.nav-logo {
+  margin-left: 3rem;
+}
+.logo {
+  width: 3rem;
+}
+
+.nav-menu {
+  display: inline-block;
+}
+
+.nav-menu-mobile {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 5rem;
+  background-color: $color8;
+  box-shadow: 5px 10px 20px $color7;
+  border-top: 1px solid $color4;
+  z-index: 4;
+}
+
+.nav-links-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.nav-links-mobile div {
+  @include flexCCFS;
+  gap: 4rem;
+}
+
+.menu-modal {
+  @include overlays;
+  height: 755vh;
+  margin-top: 5rem;
+  backdrop-filter: blur(5px);
+  z-index: 3;
+}
+
+.fa-bars,
+.fa-times {
+  font-size: 1.2rem;
+  width: 1.5rem;
+}
+
+.nav-link,
+.nav-link-mobile {
+  font-family: $secondary;
+  font-size: 1rem;
+  color: $color1;
+  text-decoration: none;
+  margin: 0rem 0.8rem;
+  transition: 0.3s ease;
+}
+
+.nav-link-mobile {
+  font-size: 1.2rem;
+}
+
+.nav-link-mobile span {
+  font-size: 1rem;
+}
+
+.nav-link:hover,
+.nav-link-mobile:hover {
+  color: $color4;
+  transition: 0.3s ease;
+}
+
+.number {
+  @include numbers;
+  font-size: 0.7rem;
+}

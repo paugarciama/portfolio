@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+// GLOBAL
+html, 
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+  background-color: $color6;
+  scroll-behavior: smooth;
+}
+
+.inactive {
+  display: none;
+}
+
+// LAYOUT
+.content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+}
+

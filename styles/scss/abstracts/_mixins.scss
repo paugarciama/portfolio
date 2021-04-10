@@ -1,8 +1,6 @@
 @use 'variables' as *;
 
-// MIXINS
-
-// Layout
+// LAYOUT
 @mixin flexCCFS {
   display: flex;
   flex-direction: column;
@@ -23,7 +21,7 @@
   width: 100%;
 }
 
-// Text
+// TEXT
 @mixin sectionTitle {
   font-family: $primary;
   color: $color1;
@@ -47,7 +45,7 @@
   color: $color4;
 }
 
-// Position 
+// POSITION
 @mixin overlays {
   position: absolute;
   top: 0;
@@ -61,7 +59,7 @@
   width: 100%;
 }
 
-// Section 
+// SECTION 
 @mixin description {
   @include text2;
   background-color: $color8;
