@@ -80,3 +80,15 @@
   color: $color2;
   margin-bottom: 1.8rem;
 }
+
+// COMPONENTS
+@mixin button {
+  font-family: $primary;
+  color: $color4;
+  background-color: $color6;
+  border: 1px solid $color4;
+  border-radius: 0.2rem;
+  padding: 0.6rem 0.9rem;
+  transition: 0.3s ease;
+  outline: none;
+}

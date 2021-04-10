@@ -1,0 +1,41 @@
+@use '../abstracts/' as *;
+
+// BUTTONS
+.resume-btn {
+  @include button;
+  margin-right: 2.2rem;
+  margin-left: 1.2rem;
+}
+
+.contact-btn {
+  @include button;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
+.header-btn {
+  @extend .contact-btn;
+  margin-top: 2rem;
+}
+
+.mobile-btn {
+  @include button;
+  display: none;
+  margin-right: 3rem;
+}
+
+.resume-btn-mobile {
+  @include button;
+  font-size: 1.1rem;
+}
+
+.resume-btn:hover,
+.resume-btn-mobile:hover,
+.contact-btn:hover,
+.header-btn:hover,
+.mobile-btn:hover {
+  cursor: pointer;
+  background-color: $color5;
+  transition: 0.3s ease;
+}
+
