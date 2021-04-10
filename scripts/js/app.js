@@ -1,3 +1,4 @@
+"use strict";
 // SHOW BURGER MENU
 var mobileMenu = document.querySelector(".nav-menu-mobile");
 var modalMenu = document.querySelector(".menu-modal");
