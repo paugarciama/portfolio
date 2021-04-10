@@ -319,6 +319,11 @@ body {
     font-size: 7.5vw;
   }
 }
+@media (max-width: 480px) {
+  .title, .subtitle {
+    font-size: 36px;
+  }
+}
 
 @keyframes appear6 {
   0% {
