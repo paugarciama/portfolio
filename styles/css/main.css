@@ -1,3 +1,11 @@
+/* $color1: #ccdef6;
+$color2: #8897b0;
+$color3: #b0af8844;
+$color4: #fffc64;
+$color5: #fcff6411;
+$color6: #0a1b2f;
+$color7: #081a29;
+$color8: #112540; */
 .resume-btn {
   font-family: "Noto Sans", sans-serif;
   color: #64ffda;
@@ -886,6 +894,12 @@ body {
   flex-direction: column;
   width: 100%;
   align-items: flex-end;
+  max-width: 350px;
+}
+@media (max-width: 830px) {
+  .project-info {
+    max-width: 100%;
+  }
 }
 
 .project-info-reverse {
@@ -893,6 +907,12 @@ body {
   flex-direction: column;
   width: 100%;
   align-items: flex-start;
+  max-width: 350px;
+}
+@media (max-width: 830px) {
+  .project-info-reverse {
+    max-width: 100%;
+  }
 }
 
 .project-type {

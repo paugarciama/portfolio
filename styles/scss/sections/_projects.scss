@@ -81,11 +81,19 @@
 .project-info {
   @include flexC100;
   align-items: flex-end;
+  max-width: 350px;
+  @include sm-desktop {
+    max-width: 100%;
+  }
 }
 
 .project-info-reverse {
   @include flexC100;
   align-items: flex-start;
+  max-width: 350px;
+  @include sm-desktop {
+    max-width: 100%;
+  }
 }
 
 .project-type {
