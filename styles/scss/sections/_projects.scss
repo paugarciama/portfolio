@@ -88,13 +88,13 @@
 
 .project-type {
   @include numbers;
-  font-size: 1rem;
+  font-size: 0.85rem;
   text-align: right;
 }
 
 .project-type-reverse {
   @include numbers;
-  font-size: 1rem;
+  font-size: 0.85rem;
   text-align: left;
 }
 

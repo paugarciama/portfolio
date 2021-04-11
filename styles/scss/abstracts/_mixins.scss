@@ -30,7 +30,7 @@
 
 @mixin text {
   font-family: $primary;
-  font-size: 1.1rem;
+  font-size: 1.03rem;
   color: $color2;
   line-height: 1.5;
 }
@@ -87,7 +87,7 @@
 
 @mixin skills {
   font-family: $secondary;
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: $color2;
   margin-bottom: 1.8rem;
 }

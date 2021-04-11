@@ -8,7 +8,7 @@
 
 .my-name {
   @include numbers;
-  font-size: 1.1rem;
+  font-size: 1rem;
   animation: appear5 0.7s;
 }
 
@@ -27,6 +27,7 @@
   @include sectionTitle;
   font-size: 4.5rem;
   margin: 0;
+  margin-left: -2px;
   @include md-desktop {
     font-size: 7.5vw;
   }
@@ -52,6 +53,7 @@
   color: $color2;
   margin-top: 0.6rem;
   line-height: 1;
+  margin-left: 0px;
   @include md-desktop {
     font-size: 7.5vw;
   }

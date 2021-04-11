@@ -8,7 +8,7 @@
 
 .contact-title {
   @include numbers;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 
@@ -33,7 +33,7 @@
 
 .fa-phone,
 .fa-envelope  {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: $color1;
   padding-right: 1rem;
 }
