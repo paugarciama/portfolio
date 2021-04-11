@@ -1,5 +1,5 @@
 .resume-btn {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #64ffda;
   background-color: #0a192f;
   border: 1px solid #64ffda;
@@ -12,7 +12,7 @@
 }
 
 .contact-btn, .header-btn {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #64ffda;
   background-color: #0a192f;
   border: 1px solid #64ffda;
@@ -40,7 +40,7 @@
   }
 }
 .mobile-btn {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #64ffda;
   background-color: #0a192f;
   border: 1px solid #64ffda;
@@ -74,7 +74,7 @@
   }
 }
 .resume-btn-mobile {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #64ffda;
   background-color: #0a192f;
   border: 1px solid #64ffda;
@@ -237,7 +237,7 @@ body {
 
 .nav-link,
 .nav-link-mobile {
-  font-family: "Cutive Mono", monospace;
+  font-family: "PT Mono", monospace;
   font-size: 1rem;
   color: #ccd6f6;
   text-decoration: none;
@@ -260,7 +260,7 @@ body {
 }
 
 .number {
-  font-family: "Cutive Mono", monospace;
+  font-family: "PT Mono", monospace;
   color: #64ffda;
   font-size: 0.7rem;
 }
@@ -290,7 +290,7 @@ body {
 }
 
 .my-name {
-  font-family: "Cutive Mono", monospace;
+  font-family: "PT Mono", monospace;
   color: #64ffda;
   font-size: 1.1rem;
   animation: appear5 0.7s;
@@ -307,7 +307,7 @@ body {
   }
 }
 .title, .subtitle {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #ccd6f6;
   font-size: 1.8rem;
   font-size: 4.5rem;
@@ -363,7 +363,7 @@ body {
   }
 }
 .description {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.1rem;
   color: #8892b0;
   line-height: 1.5;
@@ -463,7 +463,7 @@ body {
 
 .credits {
   font-size: 1rem;
-  font-family: "Cutive Mono", monospace;
+  font-family: "PT Mono", monospace;
   color: #ccd6f6;
   text-align: center;
 }
@@ -494,7 +494,7 @@ body {
 
 .section-title,
 .other-section-title {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #ccd6f6;
   font-size: 1.8rem;
 }
@@ -526,7 +526,7 @@ body {
 }
 
 .section-number {
-  font-family: "Cutive Mono", monospace;
+  font-family: "PT Mono", monospace;
   color: #64ffda;
   font-size: 1.8rem;
 }
@@ -544,7 +544,7 @@ body {
 }
 
 .about-text {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.1rem;
   color: #8892b0;
   line-height: 1.5;
@@ -683,7 +683,7 @@ body {
 }
 
 .grid-title {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #ccd6f6;
   font-size: 1.8rem;
   font-size: 1.2rem;
@@ -712,7 +712,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #8892b0;
   display: none;
   margin-bottom: 2rem;
@@ -733,7 +733,7 @@ body {
 }
 
 .dev-grid p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #8892b0;
   border: 1px solid #8892b0;
   border-radius: 50%;
@@ -752,7 +752,7 @@ body {
 }
 
 .skills-list {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #8892b0;
   list-style: none;
   padding: 0;
@@ -892,21 +892,21 @@ body {
 }
 
 .project-type {
-  font-family: "Cutive Mono", monospace;
+  font-family: "PT Mono", monospace;
   color: #64ffda;
   font-size: 1rem;
   text-align: right;
 }
 
 .project-type-reverse {
-  font-family: "Cutive Mono", monospace;
+  font-family: "PT Mono", monospace;
   color: #64ffda;
   font-size: 1rem;
   text-align: left;
 }
 
 .project-title {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #ccd6f6;
   font-size: 1.8rem;
   font-size: 1.5rem;
@@ -921,7 +921,7 @@ body {
 }
 
 .project-description {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #8892b0;
   background-color: #112240;
   line-height: 1.5;
@@ -946,7 +946,7 @@ body {
 }
 
 .project-description-reverse {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #8892b0;
   background-color: #112240;
   line-height: 1.5;
@@ -971,7 +971,7 @@ body {
 }
 
 .project-skills {
-  font-family: "Cutive Mono", monospace;
+  font-family: "PT Mono", monospace;
   font-size: 1rem;
   color: #8892b0;
   margin-bottom: 1.8rem;
@@ -979,7 +979,7 @@ body {
 }
 
 .project-skills-reverse {
-  font-family: "Cutive Mono", monospace;
+  font-family: "PT Mono", monospace;
   font-size: 1rem;
   color: #8892b0;
   margin-bottom: 1.8rem;
@@ -1067,7 +1067,7 @@ body {
 }
 
 .other-title {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #ccd6f6;
   font-size: 1.8rem;
   font-size: 1.2rem;
@@ -1077,14 +1077,14 @@ body {
 }
 
 .other-description {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #8892b0;
   line-height: 1.3;
   margin-bottom: 1.8rem;
 }
 
 .other-skills {
-  font-family: "Cutive Mono", monospace;
+  font-family: "PT Mono", monospace;
   font-size: 0.9rem;
   color: #8892b0;
 }
@@ -1132,14 +1132,14 @@ body {
 }
 
 .contact-title {
-  font-family: "Cutive Mono", monospace;
+  font-family: "PT Mono", monospace;
   color: #64ffda;
   font-size: 1.1rem;
   text-align: center;
 }
 
 .contact-subtitle {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #ccd6f6;
   font-size: 1.8rem;
   font-size: 3rem;
@@ -1149,7 +1149,7 @@ body {
 }
 
 .contact-description {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.1rem;
   color: #8892b0;
   line-height: 1.5;
