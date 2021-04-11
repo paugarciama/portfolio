@@ -72,7 +72,8 @@
   border-radius: 0.3rem;
 }
 
-.img-container:hover .p-link::before {
+.img-container:hover .p-link::before,
+.img-container2:hover .p-link::before {
   opacity: 0;
 }
 
