@@ -126,14 +126,20 @@ body {
   max-width: 1300px;
 }
 
+:root {
+  scroll-padding-top: 5rem;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  margin-top: 2rem;
+  padding-top: 2rem;
+  background-color: #0a192f;
+  z-index: 20;
 }
 
 .nav-logo {
@@ -188,7 +194,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 5rem;
+  margin-top: 7rem;
   background-color: #112240;
   box-shadow: 5px 10px 20px #081829;
   border-top: 1px solid #64ffda;
