@@ -49,3 +49,5 @@ function changeIcons() {
         icon2.classList.add('inactive');
     }
 }
+// ULTRA SECRET MESSAGE TO RECRUITERS
+console.log("I see you are inspecting this page...👮 if you have any questions or advice to improve it, I will be very happy to receive your message! 📬 etpau@hotmail.es");
